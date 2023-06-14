@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BaskinRobbins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.ttf') format("truetype");
+    font-display: swap;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #433a2c;
+    min-width: 1450px;
+}
+
+/*header*/
+#header {
+    background-color: #f7f3df;
+}
+
+.header_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 9px 0;
+}
+
+#nav {
+    display: flex;
+    position: relative;
+}
+
+#nav>li {
+    font-family: 'KCC-Ganpan';
+    width: 160px;
+    padding: 27px 0;
+    text-align: center;
+    position: relative;
+}
+
+#nav>li>a {
+    font-size: 20px;
+}
+
+/*sub*/
+.sub {
+    width: 160px;
+    top: 100%;
+    text-align: center;
+    position: absolute;
+    display: none;
+    z-index: 77;
+}
+
+#nav .sub_bg {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../images/sub_bg.png) no-repeat top center;
+    opacity: 80%;
+    z-index: 10;
+    display: none;
+}
+
+.sub li img {
+    padding-right: 10px;
+}
+
+.sub li a {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#nav>li:hover>.sub {
+    display: block;
+}
+
+/*banner*/
+#sub1_banner img {
+    width: 100%;
+}
+
+/*brand*/
+.sub1_title {
+    background-color: #fdf5ea;
+    margin: 85px auto;
+    width: 294px;
+    height: 58px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub1_title h1 {
+    color: #5e4d3d;
+    font-size: 36px;
+    font-family: 'KCC-Ganpan';
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.brand_intro {
+    margin: auto;
+    width: 1320px;
+    background: url(../images/sub/brand_bg.png) top center;
+    height: 1862px;
+    text-align: center;
+}
+
+.brand_intro img {
+    padding: 57px 0;
+}
+
+.brand_intro p {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 24px;
+}
+
+.brand_in1 {
+    opacity: 0;
+}
+
+.brand_in2 {
+    opacity: 0;
+}
+
+.three {
+    margin-top: 170px;
+}
+
+.point b {
+    font-size: 27px;
+    font-style: italic;
+}
+
+.place_intro {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.place1 {
+    background: url(../images/sub/bookcafe.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+}
+
+.place2 {
+    background: url(../images/sub/blank.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+}
+
+.place3 {
+    background: url(../images/sub/sleep.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+}
+
+.place4 {
+    background: url(../images/sub/studyroom1.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+    margin-top: 47px;
+}
+
+.place5 {
+    background: url(../images/sub/studyroom2.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+    margin-top: 47px;
+}
+
+.place6 {
+    background: url(../images/sub/studyroom3.png) no-repeat top center;
+    width: 390px;
+    height: 414px;
+    text-align: center;
+    margin-top: 47px;
+}
+
+.place_intro h3 {
+    font-size: 27px;
+    padding-top: 240px;
+}
+
+.place_intro p {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.welcome {
+    margin: auto;
+    width: 1320px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.welcome h1 {
+    text-align: center;
+
+    width: 100%;
+}
+
+.welcome .map_frame {
+    position: absolute;
+    top: -44px;
+    left: 74px;
+}
+
+.wel_intro {
+    margin: auto;
+    width: 1100px;
+    margin-top: 80px;
+}
+
+.wel {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.wel_intro img {
+    width: 42px;
+}
+
+.wel .bus {
+    padding-left: 80px;
+}
+
+.wel p {
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.clock {
+    line-height: 36px;
+}
+
+
+
+
+
+
+
+
+#footer {
+    background: url(../images/footer_bg.png) no-repeat center top;
+    width: 100%;
+    height: 285px;
+    margin-top: 30px;
+}
+
+.footer_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    padding-top: 160px;
+    padding-left: 80px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.footer_tx ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer_tx ul li {
+    padding-right: 60px;
+}
+
+.footer_tx {
+    padding-left: 50px;
+    color: white;
+}
+
+.btn_gotop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    /* 탑버튼을 화면의 가장 아래에서 몇 픽셀 떨어뜨릴 것인지 정하세요*/
+    right: 30px;
+    /* 탑버튼을 화면의 가장 오른쪽에서 몇 픽셀 떨어뜨릴 것인지 정하세요*/
+    z-index: 999;
+    cursor: pointer;
+}

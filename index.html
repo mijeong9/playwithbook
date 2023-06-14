@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+
+    <title>책이랑노랑</title>
+    <link rel="shortcut icon" href="./images/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+            </div><!--logo-->
+            <ul id="nav">
+                <li><a href="./sub1.html">책이랑노랑</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html#brand"><img src="./images/sub_brand.png" alt="brand">브랜드소개</a></li>
+                        <li><a href="./sub1.html#place"><img src="./images/sub_place.png" alt="place">시설안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html">함께노랑</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html#tab1"><img src="./images/sub_book.png" alt="book">책이랑노랑</a></li>
+                        <li><a href="./sub2.html#tab2"><img src="./images/sub_active.png" alt="active">나랑노랑</a></li>
+                        <li><a href="./sub2.html#tab3"><img src="./images/sub_coffee.png" alt="coffee">카페랑노랑</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html">멤버쉽</a>
+                    <ul class="sub">
+                        <li><a href="./sub3.html#membership"><img src="./images/sub_membership.png"
+                                    alt="membership">노랑멤버쉽</a></li>
+                        <li><a href="./sub3.html#gudok"><img src="./images/sub_plan.png" alt="plan">노랑정기구독</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub4.html">고객센터</a>
+                    <ul class="sub">
+                        <li><a href="./sub4.html#notice"><img src="./images/sub_kakao.png" alt="kakao">문의하기</a></li>
+                        <li><a href="./sub4.html#event"><img src="./images/sub_event.png" alt="event">이벤트</a></li>
+                        <li><a href="./sub4.html#sns"><img src="./images/sub_sns.png" alt="sns">리뷰</a></li>
+                    </ul>
+                </li>
+                <li class="sub_bg"></li>
+            </ul><!--nav-->
+        </div><!--header_inner-->
+    </div><!--header-->
+
+    <!-- Swiper -->
+    <div class="swiper main_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/main_banner1.jpg" alt="main_banner1"></div>
+            <div class="swiper-slide"><img src="./images/main_banner2.jpg" alt="main_banner2"></div>
+            <div class="swiper-slide"><img src="./images/main_banner3.jpg" alt="main_banner3"></div>
+        </div>
+        <div class="swiper-button-next main_next"></div>
+        <div class="swiper-button-prev main_prev"></div>
+    </div><!--main_banner-->
+
+    <div id="together">
+        <div class="together_sub1">
+            <h1>책이랑</h1>
+        </div>
+        <ul class="tabs">
+            <li><a href="#tab1">신간소개</a></li>
+            <li><a href="#tab2">추천소개</a></li>
+        </ul>
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+                <!-- Swiper -->
+                <div class="new_po">
+                    <div class="swiper new_book">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide new_bk">
+                                <a href="./sub2.html#tab1"><img src="./images/newbook1.jpg" alt="nb1"></a>
+                                <h2>열세 살의 걷기 클럽</h2>
+                                <h3>김혜정 저자(글) · 김연제 그림/만화</h3>
+                                <h4>사계절</h4>
+                            </div>
+                            <div class="swiper-slide new_bk">
+                                <a href="./sub2.html#tab1"><img src="./images/newbook2.jpg" alt="nb2"></a>
+                                <h2>우주 호텔</h2>
+                                <h3>유순화 저자(글) · 오승민 그림/만화</h3>
+                                <h4>해와나무</h4>
+                            </div>
+                            <div class="swiper-slide new_bk">
+                                <a href="./sub2.html#tab1"><img src="./images/newbook3.jpg" alt="nb3"></a>
+                                <h2>아주 특별한 우리 형</h2>
+                                <h3>고정욱 저자(글) · 김효은 그림/만화</h3>
+                                <h4>대교북스 주니어</h4>
+                            </div>
+                            <div class="swiper-slide new_bk">
+                                <a href="./sub2.html#tab1"><img src="./images/newbook4.jpg" alt="nb4"></a>
+                                <h2>소리 질러, 운동장</h2>
+                                <h3>진형민 저자(글) · 이한솔 그림/만화</h3>
+                                <h4>창비</h4>
+                            </div>
+                            <div class="swiper-slide new_bk">
+                                <a href="./sub2.html#tab1"><img src="./images/newbook5.jpg" alt="nb5"></a>
+                                <h2>레기, 내동생</h2>
+                                <h3>최도영 저자(글) · 이은지 그림/만화</h3>
+                                <h4>비룡소</h4>
+                            </div>
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper new_book-->
+                    <div class="swiper-button-next main_next new_next"></div>
+                    <div class="swiper-button-prev main_prev new_prev"></div>
+                </div><!--new_po-->
+            </div><!--tab1-->
+
+            <div id="tab2" class="tab_content best">
+                <!--Content-->
+                <div class="swiper mySwiper best_book">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide best_bk">
+                            <div class="bb_img"><a href="./sub2.html#tab1"><img src="./images/bestbook_4main.png" /></a>
+                            </div>
+                            <div class="bb_text">
+                                <h1>가을이 계속되면 좋겠어</h1>
+                                <h3>
+                                    캐스린 화이트 저자(글) · 최용은 번역 · 앨리슨 에드슨 그림/만화
+                                </h3>
+                                <h4>키즈엠</h4>
+                                <p>
+                                    아이들이 새로운 생각과 꿈을 품고 성장하도록 이끌어주는<br>
+                                    「피리 부는 카멜레온」 제54권 『가을이 계속되면 좋겠어』.
+                                </p>
+                                <p>
+                                    이 책은 겨울잠을 자기 싫은 아기 곰의 이야기를<br>
+                                    친근한 어조로 들려주고 있다.
+                                </p>
+                                <p>
+                                    찬바람이 부는 겨울이 오면 아기 곰은 가족들과 굴속에 들어가<br>
+                                    겨울잠을 자야 한다.
+                                </p>
+                                <p>
+                                    하지만 좀 더 놀고 싶은 아기 곰은 엄마 곰이 찾지 못하게<br>
+                                    숲 속의 커다란 나무 뒤로 숨는다.
+                                </p>
+                                <p>
+                                    그곳에서 만난 아기 다람쥐, 아기 두더지와 함께<br>
+                                    재미있는 놀이를 하며 즐거운 시간을 보내는데…
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_bk">
+                            <div class="bb_img"><a href="./sub2.html#tab1"><img src="./images/bestbook_3main.png" /></a>
+                            </div>
+                            <div class="bb_text">
+                                <h1>페르디의 가을나무</h1>
+                                <h3>
+                                    줄리아 롤린슨 저자(글) · 선우미정 번역 · 티파니 비키 그림/만화
+                                </h3>
+                                <h4>느림보</h4>
+                                <p>
+                                    가을이 되어서 나무가 아픈가 봐!<br>
+                                    페르디가 아침에 둘러볼 때마다 숲이 조금씩 변해 있어요.
+                                </p>
+                                <p>
+                                    싱그러운 초록색 숲은 먼지 낀 금색 숲이 되었고,<br>
+                                    페르디의 나무도 갈색으로 변해 껍질이 바싹 말라갔어요.<br>병이 났나봐요.
+                                </p>
+
+                                <p>
+                                    페르디는 엄마에게 "엄마, 나무가 아픈가 봐요."라고 말했어요.<br>
+                                    엄마의 "걱정 마, 페르디. 가을이라서 그래."라는 대답을 들은<br>
+                                    페르디는 나무에게로 가서<br>
+                                    "걱정마. 가을이라서 그래. 금방 나을 거야."라고 말해줬어요.
+                                </p>
+                                <p>
+                                    그러던 어느 날 갈색으로 변한 나뭇잎 한 장이 땅으로 떨어졌는데…</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_bk">
+                            <div class="bb_img"><a href="./sub2.html#tab1"><img src="./images/bestbook_2main.png" /></a>
+                            </div>
+                            <div class="bb_text">
+                                <h1>알록달록 가을</h1>
+                                <h3>
+                                    이영미 저자(글) · 전선영 그림/만화
+                                </h3>
+                                <h4>국민서관</h4>
+
+                                <p>
+                                    노랗고, 빨갛게 물들어가는 가을빛에 예쁘게 물들고 싶은<br>
+                                    동물들의 순수한 모습을 아름답게 그려낸 동화입니다.
+                                </p>
+                                <p>
+                                    계절이 바뀌고 가을이 찾아오는 모습을 그림을 통해<br>
+                                    자연스럽게 보여주고 있습니다.
+                                </p>
+                                <p>
+                                    색색의 고운 빛깔 열매, 열매를 먹는 동물들, 달빛 가루 등<br>
+                                    도시에서는 보기 힘든 아름다운 가을 풍경이 펼쳐집니다.
+                                </p>
+                                <p>
+                                    자연이 주는 가을의 향기를 다 함께 느껴 보아요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide best_bk">
+                            <div class="bb_img"><a href="./sub2.html#tab1"><img src="./images/bestbook_1main.png" /></a>
+                            </div>
+                            <div class="bb_text">
+                                <h1>가을열매는 맛있어</h1>
+                                <h3>
+                                    이명숙 저자(글) · 이정주 그림/만화
+                                </h3>
+                                <h4>엔이키즈</h4>
+                                <p>
+                                    곰 형제가 과수원을 지나다 가을 열매를 발견해요.<br>
+                                    곰 형제는 사과, 배, 감을 따서 맛있게 먹고 있었어요.
+                                </p>
+                                <p>
+                                    그런데 그 모습을 본 콧수염 할아버지가<br>
+                                    곰 형제를 야단치며 밤나무밭으로 몰아요.
+                                </p>
+                                <p>
+                                    깜짝 놀란 곰 형제는 놀라서 도망가다 밤송이를 밟아버렸고,<br>
+                                    콧수염 할아버지는 벌어져 까진 밤송이를 보고 좋아해요.
+                                </p>
+                                <p>
+                                    귀여운 곰 형제와 꾀 많은 콧수염 할아버지를 만나 보세요.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--tab2-->
+        </div><!--tab_container-->
+
+        <div id="play">
+            <div class="together_sub1">
+                <h1>나랑</h1>
+            </div>
+            <ul class="play_inner think">
+                <p><img src="./images/active1.png" alt="active_main1"></p>
+                <li class="think1"><a href="./sub2.html#tab2"></a></li>
+                <li class="think2"><a href="./sub2.html#tab2"></a></li>
+            </ul>
+            <ul class="play_inner art">
+                <li class="art1"><a href="./sub2.html#tab2"></a></li>
+                <li class="art2"><a href="./sub2.html#tab2"></a></li>
+                <p><img src="./images/active2.png" alt="active_main2"></p>
+            </ul>
+            <ul class="play_inner health">
+                <p><img src="./images/active3.png" alt="active_main3"></p>
+                <li class="health1"><a href="./sub2.html#tab2"></a></li>
+            </ul>
+        </div>
+        <div id="attach">
+            <h1></h1>
+        </div>
+        <div id="cafe">
+            <div class="together_sub1">
+                <h1>커피랑</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="./sub2.html#tab3"><img src="./images/menu1.png" alt="menu1"></a>
+                        <p>아메리카노</p>
+                    </li>
+                    <li>
+                        <a href="./sub2.html#tab2"><img src="./images/menu2.png" alt="menu2"></a>
+                        <p>카페라떼</p>
+                    </li>
+                    <li>
+                        <a href="./sub2.html#tab2"><img src="./images/menu3.png" alt="menu3"></a>
+                        <p>자몽에이드</p>
+                    </li>
+                    <li class="pin">
+                        <a href="./sub2.html#tab2"><img src="./images/menu4.png" alt="menu4"></a>
+                        <p>머핀</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="together_sub1 more">
+                <p><a href="./sub2.html#tab3">더보기</a></p>
+            </div>
+        </div>
+
+        <div id="qna">
+            <div class="kakao">
+                <div class="qna_tx">
+                    <h1><a href="./sub4.html#notice">문의하기</a></h1>
+                    <p><a href="./sub4.html#notice">활동 가능한 연령대가 정해져있나요?</a></p>
+                    <p><a href="./sub4.html#notice">예약 방법이 궁금해요.</a></p>
+                    <p><a href="./sub4.html#notice">어떤 활동이 있나요?</a></p>
+                </div>
+                <div class="btn"><a href="./sub4.html#notice"><img src="./images/kakao.png" alt="문의"></a></div>
+            </div>
+            <div class="event">
+                <div class="qna_tx">
+                    <h1><a href="./sub4.html#event">오늘의 이벤트</a></h1>
+                    <p><a href="./sub4.html#event">10월의 독서왕을 찾아라</a></p>
+                    <p><a href="./sub4.html#event">책이랑노랑에서 가을 숨바꼭질 하자!</a></p>
+                    <p><a href="./sub4.html#event">가을맞이 1+1 이벤트</a></p>
+                </div>
+                <div class="btn"><a href="./sub4.html#event"><img src="./images/event.png" alt="이벤트"></a></div>
+            </div>
+            <div class="sns">
+                <div class="qna_tx">
+                    <h1><a href="./sub4.html#sns">SNS 자랑하기</a></h1>
+                    <p><a href="./sub4.html#sns">책이랑노랑에서 활동하는 우리 아이</a></p>
+                    <p><a href="./sub4.html#sns">아이와 함께 데이트하러 왔어요.</a></p>
+                </div>
+                <div class="btn"><a href="./sub4.html#sns"><img src="./images/sns.png" alt="sns"></a></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer_inner">
+                <h1><a href="./index.html"><img src="./images/footer_logo.png" alt="로고"></a></h1>
+                <div class="footer_tx">
+                    <ul>
+                        <li><a href="#none">이용약관</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">이메일 무단수집거부</a></li>
+                        <li><a href="#none">회사소개</a></li>
+                    </ul>
+                    <p>(12345) 부산광역시 부산진구 백양대로17번길 5-26 책노랑빌딩 3층</p>
+                    <ul>
+                        <li>대표이사 : 이노랑</li>
+                        <li>사업자등록번호: 123-45-67898</li>
+                        <li>대표전화: 1588-1234</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn_gotop">
+            <span class="glyphicon glyphicon-chevron-up"><img src="./images/top.png" alt="top">
+            </span>
+        </a>
+
+
+
+
+
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

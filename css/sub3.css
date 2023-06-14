@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BaskinRobbins';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/baskinrobbins/BaskinRobbinsRegular.ttf') format("truetype");
+    font-display: swap;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #433a2c;
+    min-width: 1450px;
+}
+
+/*header*/
+#header {
+    background-color: #f7f3df;
+}
+
+.header_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 9px 0;
+}
+
+#nav {
+    display: flex;
+    position: relative;
+}
+
+#nav>li {
+    font-family: 'KCC-Ganpan';
+    width: 160px;
+    padding: 27px 0;
+    text-align: center;
+    position: relative;
+}
+
+#nav>li>a {
+    font-size: 20px;
+}
+
+/*sub*/
+.sub {
+    width: 160px;
+    top: 100%;
+    text-align: center;
+    position: absolute;
+    display: none;
+    z-index: 77;
+}
+
+#nav .sub_bg {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../images/sub_bg.png) no-repeat top center;
+    opacity: 80%;
+    z-index: 10;
+    display: none;
+}
+
+.sub li img {
+    padding-right: 10px;
+}
+
+.sub li a {
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#nav>li:hover>.sub {
+    display: block;
+}
+
+/*banner*/
+#sub3_banner img {
+    width: 100%;
+}
+
+/*membership*/
+.sub3_title {
+    background-color: #fdf5ea;
+    margin: 85px auto;
+    width: 294px;
+    height: 58px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub3_title h1 {
+    color: #5e4d3d;
+    font-size: 36px;
+    font-family: 'KCC-Ganpan';
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.mem_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.mem_blue {
+    background: url(../images/sub2/membership_1bg.png);
+    width: 418px;
+    height: 522px;
+}
+
+.mem_orange {
+    background: url(../images/sub2/membership_2bg.png);
+    width: 418px;
+    height: 522px;
+}
+
+.mem_green {
+    background: url(../images/sub2/membership_3bg.png);
+    width: 418px;
+    height: 522px;
+}
+
+.mem_inner p {
+    padding-top: 150px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+.mem_blue p,
+.mem_green p {
+    padding-bottom: 60px;
+}
+
+.btn {
+    margin: 80px auto;
+    width: 234px;
+    height: 58px;
+    background: url(../images/sub2/btn.png) no-repeat top center;
+}
+
+.btn h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.btn a {
+    display: block;
+    font-size: 24px;
+}
+
+#gudok {
+    margin: auto;
+    width: 1320px;
+}
+
+.gd_green {
+    background: url(../images/sub2/gudok_1bg.png) no-repeat top left;
+    height: 363px;
+}
+
+.gd_right {
+    background: url(../images/sub2/gudok_2bg.png) no-repeat top right;
+    margin: 40px 0;
+    height: 363px;
+}
+
+.gd_blue {
+    background: url(../images/sub2/gudok_3bg.png) no-repeat top left;
+    height: 363px;
+}
+
+.gd_left {
+    display: flex;
+    justify-content: left;
+    padding: 23px 52px;
+}
+
+.gd_right {
+    display: flex;
+    justify-content: right;
+    padding: 23px 52px;
+    margin: 100px 0;
+}
+
+.gd_text {
+    color: #5e4e3e;
+    font-size: 16px;
+    padding-top: 50px;
+    line-height: 40px;
+}
+
+.gd_text h3 {
+    padding-top: 20px;
+}
+
+.gd_left .gd_text {
+    padding-left: 30px;
+}
+
+.gd_right .gd_text {
+    padding-right: 30px;
+    text-align: right;
+}
+
+.gd_left .gd_text h3 {
+    padding-left: 50px;
+}
+
+.gd_right .gd_text h3 {
+    padding-right: 10px;
+}
+
+.gd_green {
+    opacity: 0;
+    margin-left: -300px;
+    max-width: 100%;
+}
+
+.gd_right {
+    opacity: 0;
+    margin-right: -300px;
+    max-width: 100%;
+}
+
+.gd_blue {
+    opacity: 0;
+    margin-left: -300px;
+    max-width: 100%;
+}
+
+
+
+#footer {
+    background: url(../images/footer_bg.png) no-repeat center top;
+    width: 100%;
+    height: 285px;
+    margin-top: 30px;
+}
+
+.footer_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    padding-top: 160px;
+    padding-left: 80px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.footer_tx ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer_tx ul li {
+    padding-right: 60px;
+}
+
+.footer_tx {
+    padding-left: 50px;
+    color: white;
+}
+
+.btn_gotop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    /* 탑버튼을 화면의 가장 아래에서 몇 픽셀 떨어뜨릴 것인지 정하세요*/
+    right: 30px;
+    /* 탑버튼을 화면의 가장 오른쪽에서 몇 픽셀 떨어뜨릴 것인지 정하세요*/
+    z-index: 999;
+    cursor: pointer;
+}
